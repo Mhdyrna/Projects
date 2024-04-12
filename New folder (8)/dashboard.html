@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/main.css">
+    <title>صفحه ادمین</title>
+</head>
+
+<body class="dashboard">
+    <nav>
+        <ul>
+
+            <li><a class="active" href="#">صفحه ادمین</a></li>
+            <li><a href="#">اضافه کردن</a></li>
+            <li><a href="#">آپدیت</a></li>
+            <li><a href="#">حذف</a></li>
+            <li><a href="#">تنظیمات</a></li>
+            <li><a href="#">خروج</a></li>
+        </ul>
+    </nav>
+    <main>
+        کلمه مورد نظر را برای جست و جو وارد کنید: <input type="search" placeholder="جست و جو .....">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+        <hr>
+
+        <table>
+            <tr>
+                <th>افزودن </th>
+                <td><button class="button add" style="vertical-align:middle"><span>کلیک کنید</span></button>
+                </td>
+            </tr>
+            <tr>
+                <th>ویرایش </th>
+                <td><button class="button edit" style="vertical-align:middle"><span>کلیک کنید</span></button></td>
+            </tr>
+            <tr>
+                <th>حذف</th>
+                <td><button class="button remove" style="vertical-align:middle"><span>کلیک کنید</span></button></td>
+            </tr>
+            <tr>
+                <th>بازیابی </th>
+                <td><button class="button restore" style="vertical-align:middle"><span>کلیک کنید</span></button></a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <button class="button add">قسمت افزودن</button>
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="">نام محصول</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="" name="" placeholder="نمک دریایی">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">قیمت محصول</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="" name="" placeholder="350000 تومان">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="">تاریخ تولید</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="" name="">
+                            <option value="">1400</option>
+                            <option value="">1401</option>
+                            <option value="">1402</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">توضیحات تکمیلی</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="افزودن توضیحات بیشتر"
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="افزودن">
+                </div>
+            </form>
+            <hr>
+            <button class="button remove">حذف</button>
+            <div class="container">
+                <form action="">
+                    <div class="col-75">
+                        شماره محصول را انتخاب کنید
+                        <select id="country" name="country">
+                            <option value="australia">محصول شماره یک</option>
+                            <option value="canada">محصول شماره دو</option>
+                            <option value="usa">محصول شماره سه</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+    </main>
+
+</body>
+
+</html>

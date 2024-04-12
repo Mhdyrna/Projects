@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "vazirmatn";
+    src: url("../fonts/vazirmatn/vazirmatn.woff2")format(woff2);
+}
+
+body {
+
+    font-family: "vazirmatn";
+    direction: rtl;
+    background-color: #222831;
+    color: #EEEEEE;
+    margin: 0px;
+}
+
+.mybody {
+    background-image: url("lib/img/jungle-background-forest-nature-scene.avif");
+    background-repeat: no-repeat;
+
+}
+
+.dashboard {
+    background-color: #EEEEEE;
+}
+
+
+.dashboard ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #222831;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.dashboard li a {
+    display: block;
+    color: #EEEEEE;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.dashboard li a.active {
+    background-color: #2a9d8f;
+    color: #EEEEEE;
+}
+
+.dashboard li a:hover:not(.active) {
+    background-color: #2a9d8f;
+    color: #EEEEEE;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.add {
+    background-color: green;
+
+}
+
+.edit {
+    background-color: blue;
+
+}
+
+.remove {
+    background-color: red;
+
+}
+
+.restore {
+    background-color: gray;
+
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+main {
+    float: left;
+    width: 75%;
+    color: #393E46;
+
+}
+
+#menu li {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    background-color: #2a9d8f;
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-weight: bold;
+
+}
+
+#menu ul {
+    display: none;
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu li a:hover {
+    color: #393E46;
+}
+
+#menu li::after {
+    content: "";
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    border-bottom: 5px solid #EEEEEE;
+    transition: 1s;
+}
+
+#menu li:hover:after {
+    width: 100%;
+}
+
+
+.center {
+    position: absolute;
+    bottom: 20%;
+    right: 300%;
+    background-color: #222831;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#main-image {
+    display: block;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: fixed;
+    padding: 3px;
+    background-color: #2a9d8f;
+    ;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer p {
+    text-align: center;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+
+#img-about {
+    float: left;
+    border: 7px solid #2a9d8f;
+    border-radius: 20%;
+}
+
+.column {
+    text-align: center;
+    width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    height: 150px;
+}
+
+.blog-image {
+    border: 3px solid #2a9d8f;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    color: #2a9d8f;
+}
+
+.main-game-image {
+    border: 3px solid #2a9d8f;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.second-game-image,
+.third-game-image {
+    border: 5px solid #2a9d8f;
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.title-sentence {
+    color: #2a9d8f;
+}
+
+p {
+    text-align: justify;
+}
+
+.hex {
+    float: left;
+    color: #2a9d8f;
+    font-size: 135px;
+}
+
+tr,
+th,
+td {
+    color: #222831;
+    margin-top: 20px;
+    border: 2px solid #222831;
+    background-color: #EEEEEE;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table tr a {
+    text-decoration: none;
+}
+
+
+/* #222831 #393E46 #00ADB5 #EEEEEE*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: right;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+input[type=remove] {
+    background-color: re;
+}
+
+input[type=remove]:hover {
+    background-color: red;
+}
+

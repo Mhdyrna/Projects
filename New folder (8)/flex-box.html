@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 70vh;
+
+            gap: 10px;
+
+
+
+        }
+
+        .article {
+
+            flex: 2;
+            background-color: gold;
+
+
+        }
+
+        .main {
+            flex: 8;
+            background-color: yellow;
+
+        }
+
+        .aside {
+            flex: 2;
+            background-color: yellowgreen;
+        }
+
+        .item1,
+        .item2,
+        .item3 {
+            margin-top: 10px;
+            border: 4px solid red;
+        }
+
+
+        .footer {
+            display: flex;
+        }
+
+        @media (max-width:577px) {
+            body {
+                background-color: blue;
+
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+        }
+
+        @media (min-width:578px) and (max-width:767px) {
+            body {
+                background-color: rgba(0, 2, 0, 0.737);
+
+            }
+
+            .container {
+                flex-direction: column-reverse;
+            }
+
+        }
+
+        @media (min-width:768px) and (max-width:900px) {
+            body {
+                background-color: rgba(193, 13, 46, 0.737);
+
+            }
+
+            .container {
+                flex-direction: row-reverse;
+            }
+
+        }
+
+        .copyright {
+            border: 2px solid black;
+            text-align: center;
+            margin-top: 40px;
+            flex: 1;
+            background-color: orange;
+            color: black;
+        }
+
+        #menu li {
+            float: right;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            list-style: none;
+            text-align: center;
+            background-color: goldenrod;
+
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: #EEEEEE;
+            font-weight: bold;
+
+        }
+
+        #menu ul {
+            display: none;
+        }
+
+        #menu li:hover ul {
+            display: block;
+        }
+
+        #menu li a:hover {
+            color: #393E46;
+        }
+
+        #menu li::after {
+            content: "";
+            display: block;
+            width: 0;
+            margin: 0 auto;
+            border-bottom: 5px solid #EEEEEE;
+            transition: 1s;
+        }
+
+        #menu li:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul id="menu">
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about-me.html">درباره من</a></li>
+            <li><a href="blog/index.html">بلاگ</a>
+            </li>
+            <li><a href="contact-me.html">تماس با ما</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="article item1">سمت راست</div>
+        <div class="main item2">سمت وسط</div>
+        <div class="aside item3">سمت چپ</div>
+    </div>
+    <div class="footer">
+        <p class="copyright">کپی رایت محفوظ است</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+body
+{
+  background-image: url("pasargad.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+.mapdiv
+{
+  width: 28%;
+
+}
+.mapdiv path
+{
+  fill: red;
+  stroke: black;
+  stroke-width:4px;
+  transition: fill 0.3s;
+}
+.mapdiv :hover
+{
+  fill:#000;
+}
+.cityname
+{
+  text-align: right;
+  font-size: 30px;
+  margin: 0;
+  float:right;
+  width: 200px;
+  height: 300px;
+
+  border: 3px solid ;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        #thegrid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        img {
+            width: 150px;
+            height: 250px;
+            border: 15px solid #2a9d8f;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: black;
+            background-color: #2a9d8f;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+        .card-sale {
+            position: relative;
+        }
+
+        .sale {
+            color: black;
+            position: absolute;
+            top: 0;
+            right: -16px;
+            border: 5px solid #f4a261;
+            background-color: #f4a261;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="thegrid">
+        <div>
+            <div class="card card-sale">
+                <img src="lib/img/batman.jpg" alt="Denim Jeans" style="width:100%">
+                <p class="sale">دارای تخفیف ویژه</p>
+                <h1>بازی بتمن</h1>
+                <p class="price">200,000 تومان</p>
+                <button>افزودن به سبد</button>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="lib/img/spiderman.webp" alt="Denim Jeans" style="width:100%">
+                <h1>بازی اسپایدرمن</h1>
+                <p class="price">250,000 تومان</p>
+
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="lib/img/ps5console.webp" alt="Denim Jeans" style="width:100%">
+                <h1>کنسول بازی</h1>
+                <p class="price">200,000 تومان</p>
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card  card-sale">
+                <img src="lib/img/xboxcontroller.avif" alt="Denim Jeans" style="width:100%">
+                <p class="sale">دارای تخفیف ویژه</p>
+
+                <h1>دسته بازی</h1>
+                <p class="price">200,000 تومان</p>
+
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="lib/img/tekken8-online.webp" alt="Denim Jeans" style="width:100%">
+                <h1>بازی تکن</h1>
+                <p class="price">200,000 تومان</p>
+
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card card-sale">
+                <img src="lib/img/ea-sports-wrc-desert-race.webp" alt="Denim Jeans" style="width:100%">
+                <p class="sale">دارای تخفیف ویژه</p>
+                <h1>بازی ماشین</h1>
+                <p class="price">200,000 تومان</p>
+
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="lib/img/hogwarts-legacy.webp" alt="Denim Jeans" style="width:100%">
+                <h1>بازی هاگوارتس</h1>
+                <p class="price">200,000 تومان</p>
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <img src="lib/img/menu-tekken8.webp" alt="Denim Jeans" style="width:100%">
+                <h1>بازی تکن</h1>
+                <p class="price">200,000 تومان</p>
+                <p><button>افزودن به سبد</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

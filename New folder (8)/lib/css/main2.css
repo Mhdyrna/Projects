@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "vazirmatn";
+    src: url("lib/fonts/vazirmatn/vazirmatn.woff2");
+}
+
+body {
+    font-family: "vazirmatn";
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: right;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: #2a9d8f;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #2a9d8f;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #72bda3;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.ul-inbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    gap: 15px;
+
+
+}
+
+.ul-food {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ul-food li {
+    height: 60vh;
+    flex-grow: 1;
+}
+
+.ul-food img {
+    max-height: 100%;
+    min-width: 100%;
+    border: 3px solid #2a9d8f;
+    border-radius: 1%;
+
+}
+
+footer {
+    margin-top: 20px;
+    position: sticky;
+    background-color: #2a9d8f;
+    text-align: center;
+}
+
+/* #264653  #2a9d8f #72bda3 #f4a261 #e76f51 */
